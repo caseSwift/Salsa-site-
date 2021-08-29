@@ -30,6 +30,8 @@ padding: 0px;
 
 /* Umesto ovoga treba dodati ikonicu */
 .dropbtn {
+    top: 40px;
+    margin: 0px;
     background-color: black;
     color: white;
     padding: 0px;
@@ -48,7 +50,7 @@ padding: 0px;
   }
 
   .dropdown-content {
-    
+    top: 45px;
     display: none;
     position: absolute;
     background-color: #f1f1f1;
