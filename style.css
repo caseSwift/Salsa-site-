@@ -3,7 +3,7 @@
 
 /* header and nav bar */
 body{margin: 0;}
-.naslov{width: 100%;
+.title{width: 100%;
     background-color: black;
     color: white;
     height: 45px;
@@ -14,7 +14,7 @@ body{margin: 0;}
     padding: 0px;
 }
 
-.naslov>h1{font-size: 35px;
+.title>h1{font-size: 35px;
 margin: 0px;
 padding: 0px;
 display: flex;
