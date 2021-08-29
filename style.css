@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 /* header and nav bar */
-
+body{margin: 0;}
 .naslov{width: 100%;
     background-color: black;
     color: white;
@@ -38,6 +38,8 @@ padding: 0px;
     cursor: pointer;
     height: 25px;
     width: 25px;
+    right: 10px;
+    
   }
 
   .dropdown {
