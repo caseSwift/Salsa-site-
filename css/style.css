@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* header and nav bar */
+body{margin: 0;
+
+}
+
+.title{width: 100%;
+    background-color: black;
+    color: white;
+    height: 45px;
+    text-align: center;
+    font-family: 'Dancing Script',cursive;
+    font-size: 35px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.title>h1{font-size: 35px;
+margin: 0px;
+padding: 0px;
+display: flex;
+
+}
+.name>h1{
+font-size: 35px;
+margin: 0px;
+padding: 0px;
+font-family: 'Dancing Script', cursive;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+header {
+    display: flex;
+}
+
+.dropdown{float: left;}
+
+/* Umesto ovoga treba dodati ikonicu */
+.dropbtn {
+    top: 40px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    padding: 0px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    right: 10px;
+    margin-bottom: 5px;
+    
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    top: 45px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 320px;
+    height: 480px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #ddd}
+
+  .show {display:block;}
+
+  #first-dance{background-color: yellow;}
+
+  /* css for slider start */
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  height: 100vh;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background: #ee9ca7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  
+background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  /* background: #ff7373; */
+  /* crimson #DC143C */
+}
+
+.slider{
+  position: relative;
+  background: #000116;
+  width: 900px;
+  min-height: 600px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider .slide{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.slider .slide.active{
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+}
+
+.slider .slide img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider .slide .info{
+  position: absolute;
+  color: #222;
+  background: rgba(255, 255, 255, 0.3);
+  width: 75%;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+}
+
+.slider .slide .info h2{
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.slider .slide .info p{
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.navigation{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slider:hover .navigation{
+  opacity: 1;
+}
+
+.prev-btn, .next-btn{
+  z-index: 999;
+  font-size: 2em;
+  color: #222;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-btn{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.next-btn{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.navigation-visibility{
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.navigation-visibility .slide-icon{
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.5);
+  width: 20px;
+  height: 10px;
+  transform: translateY(-50px);
+  margin: 0 6px;
+  border-radius: 2px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+}
+
+.navigation-visibility .slide-icon.active{
+  background: #4285F4;
+}
+
+@media (max-width: 900px){
+  .slider{
+    width: 100%;
+  }
+
+  .slider .slide .info{
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 500px){
+  .slider .slide .info h2{
+    font-size: 1.8em;
+    line-height: 40px;
+  }
+
+  .slider .slide .info p{
+    font-size: 0.9em;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.container2 {
+  width: 100%;
+  height: 250px;
+  
+  
+   /* background-color: white;  */
+}
+
+.container3 {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  
+}
+
+.what-salsa-is{
+  position: absolute;
+  background: #000116;
+  width: 1080px;
+  min-height: 720px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-size: cover;
+  background-image: url('/what-salsa-is.jpg');
+  
+  
+}
+.weren {
+  position: absolute;
+    color: #222;
+    background: rgba(255, 255, 255, 0.3);
+    width: 75%;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+}
+
+.container4 {
+  width: 100%;
+  height: 250px;
+  background-color: #9ceeba;
+}
+
+.container5{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+.instructor {
+  position: absolute;
+  background: #000116;
+  width: 1296px;
+  min-height: 864px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  object-fit: cover;
+  background-size: cover;
+  background-image: url(/pexels-elina-fairytale-3822194.jpg);
+  
+}
+.instructor img {
+  width: 100%;
+  height: 100%;
+}
+.gallery {
+  margin: 10px 50px;
+
+}
+
+.gallery img {
+  transition: 1s;
+  padding: 15px;
+  width: 200px;
+}
+
+.gallery img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+.gallery-body {
+  background-color: blanchedalmond;
+}
