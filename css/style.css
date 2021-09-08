@@ -241,6 +241,8 @@ background: linear-gradient(to right, #ffdde1, #ee9ca7);
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background: linear-gradient(to right, #ffdde1, #ee9ca7); */
+  background: #F72585;
 }
 
 
@@ -260,6 +262,7 @@ background: linear-gradient(to right, #ffdde1, #ee9ca7);
   justify-content: center;
   align-items: center;
   object-fit: cover;
+  background: #B5179E;
   
 }
 
@@ -291,7 +294,7 @@ background: linear-gradient(to right, #ffdde1, #ee9ca7);
 .container4 {
   width: 100%;
   height: 250px;
-  background-color: #9ceeba;
+  background-color: #7209B7;
 }
 
 .container5{
@@ -301,6 +304,7 @@ background: linear-gradient(to right, #ffdde1, #ee9ca7);
   justify-content: center;
   align-items: center;
   object-fit: cover;
+  background:#4361EE; 
 }
 
 .instructor {
@@ -328,7 +332,7 @@ background: linear-gradient(to right, #ffdde1, #ee9ca7);
 .gallery img {
   transition: 1s;
   padding: 15px;
-  width: 200px;
+  width: 300px;
 }
 
 .gallery img:hover {
@@ -338,4 +342,62 @@ background: linear-gradient(to right, #ffdde1, #ee9ca7);
 
 .gallery-body {
   background-color: blanchedalmond;
+}
+
+.container6{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background: #560BAD;
+}
+
+.map-info{
+  width: 50%;
+  margin-right: 20px;
+}
+
+.map{
+  width: 50%;
+  }
+.mapouter{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container7{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background: #4895EF;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
