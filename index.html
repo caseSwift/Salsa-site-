@@ -6,29 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- link for css -->
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="/css/style.css"></link>
     <!-- link for js -->
-    <script src="main.js"></script>
+    
+    <!-- Data needed for slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    
+    
+    
 </head>
-<header>
+
+<body>
+  <header>
     <div class="title">
         <div class="dropdown">
         <img onclick="myFunction()" class="dropbtn" src="https://img.icons8.com/material-outlined/24/ffffff/menu--v1.png"/>
+        </div>
+        <div class="name"><h1>Salsa Blanca</h1></div></div>
+    </div>
         
   <div id="myDropdown" class="dropdown-content">
-    <a href="#">Početna</a>
+    <a href="/index.html">Početna</a>
     <a href="#">O nama</a>
     <a href="#">Kontaktirajte s nama</a>
-    <a href="#">Galerija</a>
+    <a href="/gallery.html">Galerija</a>
     <a href="#">Blog</a>
     <a id="first-dance" href="#">Zakažite Vaš Prvi ples</a>
   </div>
     </div>
-    <div class="name"><h1>Salsa Blanca</h1></div></div>
+    
     </div>
     
 </header>
-<body>
+<!-- end of header -->
+<!-- container -->
+    <div  class="container">
+      <!-- slide -->
+      <div class="slider">
+        <div class="slide active">
+          <img src="1.jpg" alt="">
+          <div class="info">
+            <h2>Winter Mountains</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="2.jpg" alt="">
+          <div class="info">
+            <h2>Salsa Blanca</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="3.jpg" alt="">
+          <div class="info">
+            <h2>Steaming Volcanoes</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="4.jpg" alt="">
+          <div class="info">
+            <h2>Salsa Blanca</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="5.jpg" alt="">
+          <div class="info">
+            <h2>Salsa Blanca</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="navigation">
+          <i class="fas fa-chevron-left prev-btn"></i>
+          <i class="fas fa-chevron-right next-btn"></i>
+        </div>
+        <div class="navigation-visibility">
+          <div class="slide-icon active"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+        </div>
+      </div>
+      
+
+    </div>
+    <!-- <div class="container2">
+
+    </div> -->
+    <div class="container3">
+      <div class="what-salsa-is">
+        <div class="info weren">
+          <h2>Sta je zapravo Salsa?</h2>
+          <p>Salsa nije samo 1,2,3,4. Ona predstavlja mnogo toga ceo energicni ciklus koji se dozivljava igranjem i otvara nove poglede.
+            Iako nastala prvobitno u New York-u ovaj ples i dalje u svojoj osnovi ima latinsko poreklo koje je staro hiljadama godina. Ovo je stvar koju jednom kada probate moracete da se vracate dok god budete imali secanja o tom iskustvu.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container4"></div> -->
+
+    <div class="container5"><div class="instructor">
+      <!-- <img src="/pexels-elina-fairytale-3822194.jpg" alt=""> -->
+        <div class="info weren">
+          <h2>Sta je zapravo Salsa?</h2>
+          <p>Ovo je nas instruktor.Osim sto sto ima 20 goidna iskustva u plesu poseduje i sertifikaciju Plesnog Saveza Srbija kao sertifikovani instruktor plesa.
+            Ali svo iskstvu u plesu ne znaci puno ako to isto iskustvo ne znate da prenesete na druge. Sto se ne moze reci za naseg instruktura koji poseduje brojne vestine u metadologiji i .... nastavak eseja
+          </p>
+        </div>
+      </div></div>
+    <script src="/js/main.js"></script>
+
+    <div class="container6">
+      <h1>Nasa lokacija Beograd</h1>
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="928" height="760" id="gmap_canvas" src="https://maps.google.com/maps?q=zeleni%20venac&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2piratebay.org"></a><br><style>.mapouter{position:relative;text-align:right;height:760px;width:928px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:760px;width:928px;}</style></div></div>
+    </div>
+    <div class="container7">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
     
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      
+        <input type="submit" value="Submit">
+      </form>
+    </div>
 </body>
 </html>
